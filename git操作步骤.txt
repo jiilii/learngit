@@ -90,7 +90,8 @@
     4.É¾³ý·ÖÖ§
         git branch -d dev
         git branch
-
+    5.push
+        git push origin dev
     
     
     
