@@ -49,23 +49,28 @@
     git rm del.txt
     
 六、远程仓库
-    1.在github上创建learngit仓库
-        关联一个远程库，使用命令
+    1.在github上创建learngit仓库：
+    关联一个远程库，使用命令：
     git remote add origin git@github.com:jiilii/learngit.git
     或
     git remote add origin https://github.com/jiilii/learngit.git
     
-    第一次推送master分支的所有内容
+    2.第一次推送master分支的所有内容：
     git push -u origin master
+    git push -u -f origin master
+    
+    git push origin master
+    
+   3.从远程库克隆：
+     
+    要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+    Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+    
+    git clone https://github.com/jiilii/learngit.git
+    git clone git@github.com:jiilii/learngit.git 
     
     
-    
-    
-    
-    
-    
-    
-    
+七、分支管理
     
     
     
