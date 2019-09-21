@@ -1,0 +1,97 @@
+
+一、安装git
+    下载，安装
+
+二、配置
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "email@example.com"
+    
+三、注册github
+    1.注册
+    2.配置ssh：
+    git-bash:在主目录下：
+    ssh-keygen -t rsa -C "jiilii@126.com"
+    在.ssh目录中将id_rsa.pub内容复制到github的setting相关项中。
+四、创建版本库
+    $ mkdir learngit
+    $ cd learngit
+    $ pwd
+    $ git init
+
+     或：git clone git@github.com:jiilii/learngit.git
+            git clone https://github.com/jiilii/learngit.git
+五、操作
+    初始化一个Git仓库，使用git init命令。
+
+    添加文件到Git仓库，分两步：
+    1.使用命令git add <file>，注意，可反复多次使用，添加多个文件；实际上就是把文件修改添加到暂存区；
+    git add readme.txt
+    git add .
+    2.使用命令git commit -m <message>，完成。实际上就是把暂存区的所有内容提交到当前分支。
+
+    如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+    
+    查看提交的历史版本
+    git log
+    git log --pretty=oneline
+    回退版本，把工作区的文件更新。
+    git reset --hard 1094a
+    git reset --hard HEAD~5
+
+    撤销修改：从暂存区恢复到工作区
+    git checkout -- readme.txt 或
+    git restore -- readme.txt   /   git restore -- .
+    
+    版本恢复：从版本库恢复到暂存区和工作区
+    git reset --hard HEAD~
+    
+    删除文件
+    git rm del.txt
+    
+六、远程仓库
+    1.在github上创建learngit仓库
+        关联一个远程库，使用命令
+    git remote add origin git@github.com:jiilii/learngit.git
+    或
+    git remote add origin https://github.com/jiilii/learngit.git
+    
+    第一次推送master分支的所有内容
+    git push -u origin master
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
