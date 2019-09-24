@@ -1,98 +1,101 @@
 
-Ò»¡¢°²×°git
-    ÏÂÔØ£¬°²×°
+ä¸€ã€å®‰è£…git
+    ä¸‹è½½ï¼Œå®‰è£…
     git-bash
 
-¶ş¡¢ÅäÖÃ
+äºŒã€é…ç½®
     $ git config --global user.name "Your Name"
     $ git config --global user.email "email@example.com"
     
-Èı¡¢×¢²ágithub
-    1.×¢²á
-    2.ÅäÖÃssh£º
-        git-bash:ÔÚÖ÷Ä¿Â¼ÏÂ£º
+ä¸‰ã€æ³¨å†Œgithub
+    1.æ³¨å†Œ
+    2.é…ç½®sshï¼š
+        git-bash:åœ¨ä¸»ç›®å½•ä¸‹ï¼š
         ssh-keygen -t rsa -C "jiilii@126.com"
-        ÔÚ.sshÄ¿Â¼ÖĞ½«id_rsa.pubÄÚÈİ¸´ÖÆµ½githubµÄsettingÏà¹ØÏîÖĞ¡£
+        åœ¨.sshç›®å½•ä¸­å°†id_rsa.pubå†…å®¹å¤åˆ¶åˆ°githubçš„settingç›¸å…³é¡¹ä¸­ã€‚
 
-ËÄ¡¢´´½¨°æ±¾¿â
+å››ã€åˆ›å»ºç‰ˆæœ¬åº“
     $ mkdir learngit
     $ cd learngit
     $ pwd
     $ git init
 
-     »ò£ºgit clone git@github.com:jiilii/learngit.git
+     æˆ–ï¼šgit clone git@github.com:jiilii/learngit.git
             git clone https://github.com/jiilii/learngit.git
 
-Îå¡¢²Ù×÷
-    ³õÊ¼»¯Ò»¸öGit²Ö¿â£¬Ê¹ÓÃgit initÃüÁî¡£
+äº”ã€æ“ä½œ
+    åˆå§‹åŒ–ä¸€ä¸ªGitä»“åº“ï¼Œä½¿ç”¨git initå‘½ä»¤ã€‚
 
-    Ìí¼ÓÎÄ¼şµ½Git²Ö¿â£¬·ÖÁ½²½£º
-    1.Ê¹ÓÃÃüÁîgit add <file>£¬×¢Òâ£¬¿É·´¸´¶à´ÎÊ¹ÓÃ£¬Ìí¼Ó¶à¸öÎÄ¼ş£»Êµ¼ÊÉÏ¾ÍÊÇ°ÑÎÄ¼şĞŞ¸ÄÌí¼Óµ½Ôİ´æÇø£»
+    æ·»åŠ æ–‡ä»¶åˆ°Gitä»“åº“ï¼Œåˆ†ä¸¤æ­¥ï¼š
+    1.ä½¿ç”¨å‘½ä»¤git add <file>ï¼Œæ³¨æ„ï¼Œå¯åå¤å¤šæ¬¡ä½¿ç”¨ï¼Œæ·»åŠ å¤šä¸ªæ–‡ä»¶ï¼›å®é™…ä¸Šå°±æ˜¯æŠŠæ–‡ä»¶ä¿®æ”¹æ·»åŠ åˆ°æš‚å­˜åŒºï¼›
         git add readme.txt
         git add .
-    2.Ê¹ÓÃÃüÁîgit commit -m <message>£¬Íê³É¡£Êµ¼ÊÉÏ¾ÍÊÇ°ÑÔİ´æÇøµÄËùÓĞÄÚÈİÌá½»µ½µ±Ç°·ÖÖ§¡£
+    2.ä½¿ç”¨å‘½ä»¤git commit -m <message>ï¼Œå®Œæˆã€‚å®é™…ä¸Šå°±æ˜¯æŠŠæš‚å­˜åŒºçš„æ‰€æœ‰å†…å®¹æäº¤åˆ°å½“å‰åˆ†æ”¯ã€‚
 
-        Èç¹ûgit status¸æËßÄãÓĞÎÄ¼ş±»ĞŞ¸Ä¹ı£¬ÓÃgit diff¿ÉÒÔ²é¿´ĞŞ¸ÄÄÚÈİ¡£
+        å¦‚æœgit statuså‘Šè¯‰ä½ æœ‰æ–‡ä»¶è¢«ä¿®æ”¹è¿‡ï¼Œç”¨git diffå¯ä»¥æŸ¥çœ‹ä¿®æ”¹å†…å®¹ã€‚
         
-        ²é¿´Ìá½»µÄÀúÊ·°æ±¾
+        æŸ¥çœ‹æäº¤çš„å†å²ç‰ˆæœ¬
         git log
         git log --pretty=oneline
-        »ØÍË°æ±¾£¬°Ñ¹¤×÷ÇøµÄÎÄ¼ş¸üĞÂ¡£
+        å›é€€ç‰ˆæœ¬ï¼ŒæŠŠå·¥ä½œåŒºçš„æ–‡ä»¶æ›´æ–°ã€‚
         git reset --hard 1094a
         git reset --hard HEAD~5
 
-        ³·ÏúĞŞ¸Ä£º´ÓÔİ´æÇø»Ö¸´µ½¹¤×÷Çø
-        git checkout -- readme.txt »ò
+        æ’¤é”€ä¿®æ”¹ï¼šä»æš‚å­˜åŒºæ¢å¤åˆ°å·¥ä½œåŒº
+        git checkout -- readme.txt æˆ–
         git restore -- readme.txt   /   git restore -- .
         
-        °æ±¾»Ö¸´£º´Ó°æ±¾¿â»Ö¸´µ½Ôİ´æÇøºÍ¹¤×÷Çø
+        ç‰ˆæœ¬æ¢å¤ï¼šä»ç‰ˆæœ¬åº“æ¢å¤åˆ°æš‚å­˜åŒºå’Œå·¥ä½œåŒº
         git reset --hard HEAD~
         
-        É¾³ıÎÄ¼ş
+        åˆ é™¤æ–‡ä»¶
         git rm del.txt
     
-Áù¡¢Ô¶³Ì²Ö¿â
-    1.ÔÚgithubÉÏ´´½¨learngit²Ö¿â£º
-        ¹ØÁªÒ»¸öÔ¶³Ì¿â£¬Ê¹ÓÃÃüÁî£º
+å…­ã€è¿œç¨‹ä»“åº“
+    1.åœ¨githubä¸Šåˆ›å»ºlearngitä»“åº“ï¼š
+        å…³è”ä¸€ä¸ªè¿œç¨‹åº“ï¼Œä½¿ç”¨å‘½ä»¤ï¼š
         git remote add origin git@github.com:jiilii/learngit.git
-        »ò
+        æˆ–
         git remote add origin https://github.com/jiilii/learngit.git
         
         git push --force git@github.com:jiilii/learngit.git
-    2.µÚÒ»´ÎÍÆËÍmaster·ÖÖ§µÄËùÓĞÄÚÈİ£º
+    2.ç¬¬ä¸€æ¬¡æ¨é€masteråˆ†æ”¯çš„æ‰€æœ‰å†…å®¹ï¼š
         git push -u origin master
         git push -u -f origin master
         
         git push origin master
     
-   3.´ÓÔ¶³Ì¿â¿ËÂ¡£º
+   3.ä»è¿œç¨‹åº“å…‹éš†ï¼š
      
-        Òª¿ËÂ¡Ò»¸ö²Ö¿â£¬Ê×ÏÈ±ØĞëÖªµÀ²Ö¿âµÄµØÖ·£¬È»ºóÊ¹ÓÃgit cloneÃüÁî¿ËÂ¡¡£
-        GitÖ§³Ö¶àÖÖĞ­Òé£¬°üÀ¨https£¬µ«Í¨¹ısshÖ§³ÖµÄÔ­ÉúgitĞ­ÒéËÙ¶È×î¿ì¡£
+        è¦å…‹éš†ä¸€ä¸ªä»“åº“ï¼Œé¦–å…ˆå¿…é¡»çŸ¥é“ä»“åº“çš„åœ°å€ï¼Œç„¶åä½¿ç”¨git cloneå‘½ä»¤å…‹éš†ã€‚
+        Gitæ”¯æŒå¤šç§åè®®ï¼ŒåŒ…æ‹¬httpsï¼Œä½†é€šè¿‡sshæ”¯æŒçš„åŸç”Ÿgitåè®®é€Ÿåº¦æœ€å¿«ã€‚
         
         git clone https://github.com/jiilii/learngit.git
         git clone git@github.com:jiilii/learngit.git 
     
-Æß¡¢·ÖÖ§¹ÜÀí
+ä¸ƒã€åˆ†æ”¯ç®¡ç†
     
-    1.ÎÒÃÇ´´½¨dev·ÖÖ§£¬È»ºóÇĞ»»µ½dev·ÖÖ§£º
+    1.æˆ‘ä»¬åˆ›å»ºdevåˆ†æ”¯ï¼Œç„¶ååˆ‡æ¢åˆ°devåˆ†æ”¯ï¼š
         git branch dev
         git switch dev   / git checkout dev
-        »ò£º
+        æˆ–ï¼š
         git switch -c dev   /   git checkout -b dev
-    2.²é¿´·ÖÖ§
+    2.æŸ¥çœ‹åˆ†æ”¯
         git branch 
-        git branchÃüÁî»áÁĞ³öËùÓĞ·ÖÖ§£¬µ±Ç°·ÖÖ§Ç°Ãæ»á±êÒ»¸ö*ºÅ¡£È»ºó£¬ÎÒÃÇ¾Í¿ÉÒÔÔÚdev·ÖÖ§ÉÏÕı³£Ìá½»¡£
-    3.ºÏ²¢·ÖÖ§
+        git branchå‘½ä»¤ä¼šåˆ—å‡ºæ‰€æœ‰åˆ†æ”¯ï¼Œå½“å‰åˆ†æ”¯å‰é¢ä¼šæ ‡ä¸€ä¸ª*å·ã€‚ç„¶åï¼Œæˆ‘ä»¬å°±å¯ä»¥åœ¨devåˆ†æ”¯ä¸Šæ­£å¸¸æäº¤ã€‚
+    3.åˆå¹¶åˆ†æ”¯
         git switch master  
         git merge dev
-        git mergeÃüÁîÓÃÓÚºÏ²¢Ö¸¶¨·ÖÖ§µ½µ±Ç°·ÖÖ§¡£
-    4.É¾³ı·ÖÖ§
+        git mergeå‘½ä»¤ç”¨äºåˆå¹¶æŒ‡å®šåˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯ã€‚
+    4.åˆ é™¤åˆ†æ”¯
         git branch -d dev
         git branch
     5.push
         git push origin dev
-    
+    6.è§£å†³å†²çª
+        
+    7.åˆå¹¶å¹¶åˆ›å»ºæ–°çš„åˆ†æ”¯
+        git merge --no-ff -m "merge with no-ff" dev
     
     
     
