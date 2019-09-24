@@ -57,7 +57,7 @@
         git remote add origin git@github.com:jiilii/learngit.git
         或
         git remote add origin https://github.com/jiilii/learngit.git
-        
+        或
         git push --force git@github.com:jiilii/learngit.git
     2.第一次推送master分支的所有内容：
         git push -u origin master
