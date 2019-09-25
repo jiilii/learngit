@@ -1,5 +1,4 @@
 
-<此处修改一个bug>
 
 一、安装git
     下载，安装
@@ -119,9 +118,17 @@
         git branch -D feature-129
         
     11.多人协作
+        当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
+        要查看远程库的信息，用：
+        git remote
+        或者，用：
+        git remote -v
+        
+        推送分支（把该分支上的所有本地提交推送到远程库）
+        git push origin master
+        git push origin dev
     
-    
-    
+        抓取分支
     
     
     
