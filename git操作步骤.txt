@@ -105,9 +105,14 @@
         git stash
         
         在master分支上修改bug，提交。
-    
-    
-    
+        
+        查看工作现场：
+        git stash list
+        恢复工作现场：
+        git stash apply 
+        git stash drop来删除
+        或者：
+        git stash pop
     
     
     
