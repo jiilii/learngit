@@ -115,7 +115,9 @@
         git stash pop
         
     10.Feature分支
-    
+        强行删除一个分支
+        git branch -D feature-129
+        
     11.多人协作
     
     
