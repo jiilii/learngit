@@ -113,7 +113,10 @@
         git stash drop来删除
         或者：
         git stash pop
+        
+    10.Feature分支
     
+    11.多人协作
     
     
     
